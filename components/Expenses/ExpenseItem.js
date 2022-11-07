@@ -4,7 +4,6 @@ import ExpenseDetails from './ExpenseDetails.js';
 import Card from '../UI/Card.js';
 import "./ExpenseItem.css";
 
-//chnage title
 const ExpenseItem = (props) => {
   const [title, setTitle] = useState(props.title);
   const clickHandler = () => { 
@@ -17,7 +16,6 @@ const ExpenseItem = (props) => {
   const changeAmount= ()=> {
     setAmount('100$')
   }
-  //delete expense
   const parentNode = document.getElementsByClassName('expenses')[0];
   const childNode = document.getElementsByClassName('expense-item')[0];
   const deleteExpense = () =>{
@@ -43,3 +41,26 @@ export default ExpenseItem;
 
 
 
+
+
+
+////////////////////////////////
+// import ExpenseDate from './ExpenseDate.js';
+// import ExpenseDetails from './ExpenseDetails.js';
+// import Card from '../UI/Card.js';
+// import "./ExpenseItem.css";
+
+// const ExpenseItem = (props) => {
+//   const clickHandler = () => {
+//     console.log("helllo");
+//   }
+//   return (
+//     <Card className="expense-item">
+//       <ExpenseDate date = {props.date} />
+//       <ExpenseDetails title = {props.title} amount={props.amount}/>
+//       <button onClick = {clickHandler} >Change title</button>
+    
+//     </Card>
+//   ); 
+// }
+// export default ExpenseItem;
